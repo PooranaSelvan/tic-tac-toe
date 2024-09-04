@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-wrap items-center justify-center">
+    <div class="flex flex-wrap flex-col items-center justify-center">
+        <div class="grid grid-cols-3 gap-[20px]">
+            <button class="btns"></button>
+            <button class="btns"></button>
+            <button class="btns"></button>
+            <button class="btns"></button>
+            <button class="btns"></button>
+            <button class="btns"></button>
+            <button class="btns"></button>
+            <button class="btns"></button>
+            <button class="btns"></button>
+        </div>
+        <div class="flex flex-wrap items-center justify-center">
+            <button id="restart" class="flex h-12 mt-10 text-white items-center px-6 py-8 text-3xl font-semibold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 
+            rounded-lg shadow-lg hover:scale-105 duration-500 hover:drop-shadow-2xl hover:shadow-[#7dd3fc] cursor-pointer">
+                Restart Game
+            </button>
+        </div>
+
+    </div>
+
+    <div class="popup hide">
+        <p id="message" class="animate-pulse"></p>
+        <button id="new-game">New Game</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
